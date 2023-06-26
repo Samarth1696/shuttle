@@ -271,7 +271,7 @@ pub mod runtime {
                     break channel;
                 }
                 trace!("waiting for runtime endpoint to open");
-                tokio::time::sleep(Duration::from_millis(5)).await;
+                tokio::time::sleep(Duration::from_millis(500)).await;
             }
         })
         .await
